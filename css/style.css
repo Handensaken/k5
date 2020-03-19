@@ -10,8 +10,26 @@
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
+    padding-left: 2.5%;
 }
 
 p {
     line-height: 1.5;
+}
+header{
+    display: grid;
+    grid-template-columns: repeat(2, 60%);
+}
+#Search{
+    padding-top: 2.5%;
+}
+
+#information{
+    display: grid;
+    grid-template-columns: repeat(2,60%);
+    grid-gap: 2%;
+    margin-top: 10%;
+}
+.info{
+    border: black solid 1px;
 }
