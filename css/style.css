@@ -19,9 +19,10 @@ p {
 header{
     display: grid;
     grid-template-columns: repeat(2, 60%);
+    padding-top: 0.5%;
 }
 #Search{
-    padding-top: 2.5%;
+    padding-top: 2%;
 }
 
 #information{
@@ -32,4 +33,17 @@ header{
 }
 .info{
     border: black solid 1px;
+}
+
+#new{
+    margin-top: 10%;
+    margin-left: 1.5%;
+}
+
+.myNewDiv{
+    display: none;
+    font-size: 200%;
+}
+.lyrics{
+    font-size: 80%;
 }
