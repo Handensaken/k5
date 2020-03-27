@@ -27,9 +27,10 @@ header{
 
 #information{
     display: grid;
-    grid-template-columns: repeat(2,60%);
+    grid-template-columns: 65% 30%;
     grid-gap: 2%;
     margin-top: 10%;
+    margin-left: 2%;
 }
 .info{
     border: black solid 1px;
@@ -46,4 +47,7 @@ header{
 }
 .lyrics{
     font-size: 80%;
+}
+.songs{
+    display: none;
 }
