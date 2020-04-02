@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
 }
-
+header{
+    background-color: cornflowerblue;
+    padding-bottom: 1%;
+}
 :root {
     font-family: 'Lora', serif;
     font-size: 16px;
@@ -12,13 +15,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
     padding-left: 2.5%;
 }
-
 p {
     line-height: 1.5;
 }
 header{
     display: grid;
-    grid-template-columns: repeat(2, 60%);
+    grid-template-columns: 65% 30%;
     padding-top: 0.5%;
 }
 #Search{
@@ -31,23 +33,115 @@ header{
     grid-gap: 2%;
     margin-top: 10%;
     margin-left: 2%;
+    margin-bottom: 1%;
 }
 .info{
     border: black solid 1px;
+    border-radius: 10px;
+    padding: 1%;
+}
+#scrollInfo{
+    text-align: center;
 }
 
-#new{
-    margin-top: 10%;
-    margin-left: 1.5%;
+#startSongs{
+    background: linear-gradient(141deg, #b80fb0 0%, #a01fdb 51%, #5e2ce8 75%);
 }
-
-.myNewDiv{
-    display: none;
-    font-size: 200%;
+#goButton{
+    border: 1px black solid;
+    border-radius: 5px;
+    font-size: 90%;
+    padding:0.3%;
+    
+}
+input[type=search]{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+#SearchBar{
+    padding: 0.5%;
+    border: 1px black solid;
+    border-radius: 10px;
 }
 .lyrics{
     font-size: 80%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding-bottom: 1%;
 }
 .songs{
-    display: none;
+    display: block;
+    padding-top: 1%;
+    color: white;
 }
+a:link{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+a:active{
+    color: white;
+}
+footer{
+    text-align: center;
+    font-size: 75%;
+    background-color: cornflowerblue;
+    padding: 1%;
+}
+
+#arrowAnim {
+    text-align: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .arrow {
+    width: 3vw;
+    height: 3vw;
+    border: 1.5vw solid;
+    border-color: black transparent transparent black;
+    transform: rotate(-135deg);
+  }
+  
+  
+  .arrowSliding {
+    position: absolute;
+    -webkit-animation: slide 4s linear infinite; 
+            animation: slide 4s linear infinite;
+  }
+  
+  .delay1 {
+    -webkit-animation-delay: 1s; 
+      animation-delay: 1s;
+  }
+  .delay2 {
+    -webkit-animation-delay: 2s; 
+      animation-delay: 2s;
+  }
+  .delay3 {
+    -webkit-animation-delay: 3s; 
+      animation-delay: 3s;
+  }
+  
+  @-webkit-keyframes slide {
+      0% { opacity:0; transform: translateY(-15vw); }	
+     20% { opacity:1; transform: translateY(-9vw); }	
+     80% { opacity:1; transform: translateY(9vw); }	
+    100% { opacity:0; transform: translateY(15vw); }	
+  }
+  @keyframes slide {
+      0% { opacity:0; transform: translateY(-15vw); }	
+     20% { opacity:1; transform: translateY(-9vw); }	
+     80% { opacity:1; transform: translateY(9vw); }	
+    100% { opacity:0; transform: translateY(15vw); }	
+  }

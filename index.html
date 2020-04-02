@@ -15,20 +15,44 @@
             <p id="Search">
                 <input type="search" id="SearchBar" 
                 placeholder="Search" value="">
-                <button type="button" id="goButton">Go</button>
+               <button type="button" id="goButton">GO</button>
+               <button type="button" id="resetInfo">Reset Info</button>
             </p>
         </form>
     </header>
     <main>
+    <div id="test">
         <div id="information">
             <article class="info">
                 Denna site är gjord för Webbutveckling k5 av Max Larsson. Det är tänkt som ett musiklibrary där man ska kunna hitta sånger och deras texter baserat på namnet, en del av namnet, eller en del av texten. Se till att inte trycka på "Enter" när du befinner dig i sökbaren för det laddar av någon anledning om sidan.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fuga rerum eum quae itaque quaerat eveniet tempora! Et doloribus reprehenderit, in non mollitia tempore corrupti necessitatibus voluptatibus ipsam recusandae vel.
             </article>
             <article class="info">
-               Sångerna som finns är Highway to Hell av ACDC, Sonne av Rammstein och Son of a Wolf av Powerwolf.
+               Sångerna som finns är listade nedan.
             </article>
         </div>
+    </div>
+
+    <div id="scrollInfo">
+        <h2>Scroll down for a list of all available songs</h2>
+    </div>
+
+    <div id="arrowAnim">
+        <div class="arrowSliding">
+          <div class="arrow"></div>
+        </div>
+        <div class="arrowSliding delay1">
+          <div class="arrow"></div>
+        </div>
+        <div class="arrowSliding delay2">
+          <div class="arrow"></div>
+        </div>
+        <div class="arrowSliding delay3">
+          <div class="arrow"></div>
+        </div>
+      </div>
+
+    <div id="startSongs">
         <div class="songs">
             <h5 class="titles">Highway to Hell by ACDC</h5>
             <div class="lyrics">
@@ -153,11 +177,18 @@ Son of a wolf
 Can you hear them…
             </div>
         </div>
-       
         <div class="songs">
             <h5 class="titles">Star Marker by Kana Boon</h5>
             <div class="lyrics">Atarimae ga terasu mabushisa ni Mabuta wo tojita kimi no koto Dare no me ni mo furenai kage ni Hitotsubu no hikari wo soko ni Mayoi tomadoi yume no mabataki ni Nagareboshi ga hoho wo tsutatte mo Nuguisatte kureru kurai no Hito nari no neiro wo kimi ni Kaerarenai kako ni iro wo nutteiku Kitto mirai nanairo katate ni paretto Waratte misete yo Tatta hitotsu dake negatterun da itsudatte Saitei na yoru wo nukete Te to te sen de tsunagu sorezore no hoshi ni Tomoru raito wo raito Dore kurai kurai fukai mayonaka ni Mogureba kimi ni deaeru ka Onaji bun dake no sabishigari Tsuyogari no meiro no naka de Migihidari machigai mata modotte susume Kitto magarikado de saka nobotta saki de Mitsukete miseru yo Tatta hitotsu demo kamawanai sa itsudatte Saitei na yoru wo nukete Me to me mimi to koe tsunagu dansu furoa de Odorou sa yo ga akeru made Samenai yume no tochuu de kimi ga te ageta nara Zutto sono te tsukande hanashi wa shinai ze Waratte misete yo Tatta hitotsu dake negatterun da itsudatte Saitei na yoru wo nukete Michigai kanchigai machigai ja nakutte Kokoro kara waraeru you ni Tatta ichido dake isshun no kirameki dake Sonna yawa na inori janai Danchigai ni shinjitai tobikoete mou ikkai Sebandeku kimi no shikai wo bokura no sekai wo hiroku</div>
         </div>
+        <div class="songs">
+            <h5 class="titles"></h5>
+            <div class="lyrics"></div>
+        </div>
+    </div>
     </main>
+    <footer>
+        <p id="helo"><a href="#">back to top</a></p>
+    </footer>
 </body>
 </html>

@@ -1,6 +1,6 @@
 let submitButton = document.querySelector("#goButton");
 let newSong = document.querySelector("#new");
-
+let info = document.querySelectorAll(".info");
 
 let newTest = [
     
@@ -15,7 +15,6 @@ for (let index = 0; index < songs.length; index++) {
     newTest.push([title,lyric]);
 }
 
-
 submitButton.addEventListener("click", ()=>{
     let SearchBar = document.querySelector("#SearchBar").value.toUpperCase();
     console.log(SearchBar);
@@ -29,8 +28,18 @@ submitButton.addEventListener("click", ()=>{
             else{
                 songs[i].style.display = "none";
             }
-            if(SearchBar == ""){
+            if(SearchBar == null){
                 songs[i].style.display = "none";
             }
+            for (let j = 0; j < info.length; j++) {
+                 info[j].style.display = "none";
+            }
+    }
+})
+
+let upBtn = document.querySelector("#helo");
+upBtn.addEventListener("click", ()=>{
+    for (let i = 0; i < info.length; i++) {
+        info[i].style.display = "block";
     }
 })
