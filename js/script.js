@@ -1,7 +1,7 @@
 let submitButton = document.querySelector("#goButton");
 let newSong = document.querySelector("#new");
 let info = document.querySelectorAll(".info");
-
+let resetInfo = document.querySelector("#resetInfo")
 let newTest = [
     
 ];
@@ -14,6 +14,11 @@ for (let index = 0; index < songs.length; index++) {
     console.log(title);
     newTest.push([title,lyric]);
 }
+resetInfo.addEventListener("click", ()=>{
+    for (let i = 0; i < info.length; i++) {
+       info[i].style.display="block";
+    }
+})
 
 submitButton.addEventListener("click", ()=>{
     let SearchBar = document.querySelector("#SearchBar").value.toUpperCase();
